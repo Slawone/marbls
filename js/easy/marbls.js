@@ -24,7 +24,7 @@
       if (numberOfBalls.bot >= 1 && numberOfBalls.player >= 1) {
         let playerNumber = prompt(inputPhrase);
 
-        if (playerNumber > numberOfBalls.player) {
+        if (playerNumber > numberOfBalls.player || playerNumber <= 0) {
           alert(inputPhrase);
           start();
         }
